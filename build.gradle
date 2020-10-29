@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'edu.sc.seis.launch4j' version '2.4.3'
+    id "com.github.johnrengelman.shadow" version "5.2.0"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'com.squareup.okhttp3:mockwebserver:4.9.0'
+    compile group: 'org.json', name: 'json', version: '20200518'
+}
+
+jar {
+    manifest.attributes('Main-Class': 'me.dc.automaticdiscordcrasher.AppInitializator')
+}
+
+launch4j {
+    jar = 'C:\\Users\\mateu\\IdeaProjects\\AutomaticDiscordCrasher\\build\\libs\\AutomaticDiscordCrasher-1.0-SNAPSHOT-all.jar'
+    mainClassName = 'me.dc.automaticdiscordcrasher.AppInitializator'
+    icon = "C:\\Users\\mateu\\IdeaProjects\\AutomaticDiscordCrasher\\build\\resources\\main\\icon.ico"
+}
