@@ -14,12 +14,12 @@
 
 ## ChangeLog
 **DiscordCrasher V1.1**
-- [Adicionado changelog](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/cce9d9dc2cbeaaeaff036586b02ec76fda2bc14d/src/main/resources/Changelog.fxml#L1-L10)
-- [Adicionado sistema de update](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/3eca01c0950d19656733bc523b1550871a7bc3a1/src/main/java/me/dc/automaticdiscordcrasher/App.java#L28-L53)
-- [Adicionado sistema de embed (Bypass para alguns bots anti-spam)](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/3eca01c0950d19656733bc523b1550871a7bc3a1/src/main/java/me/dc/automaticdiscordcrasher/utils/Flooder.java#L50-L63)
-- [Adicionado sistema de delay (Bypass para alguns bots anti-flood)](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/3eca01c0950d19656733bc523b1550871a7bc3a1/src/main/java/me/dc/automaticdiscordcrasher/utils/Flooder.java#L109-L111)
-- [Melhoria no sistema de erros](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/3eca01c0950d19656733bc523b1550871a7bc3a1/src/main/java/me/dc/automaticdiscordcrasher/utils/Flooder.java#L129-L147)
-- [Adicionado número da versão no título do software](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/3eca01c0950d19656733bc523b1550871a7bc3a1/src/main/java/me/dc/automaticdiscordcrasher/AppManager.java#L21)
+- Adicionado changelog;
+- Adicionado sistema de update;
+- Adicionado sistema de embed (Bypass para alguns bots anti-spam);
+- Adicionado sistema de delay (Bypass para alguns bots anti-flood);
+- Melhoria no sistema de erros;
+- Adicionado número da versão no título do software.
 
 **DiscordCrasher V1.0**
 - Primeira versão do software
