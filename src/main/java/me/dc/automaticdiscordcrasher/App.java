@@ -9,6 +9,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.json.JSONObject;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -34,16 +35,20 @@ public class App extends Application {
         JSONObject jsonObject = new JSONObject(response);
 
         if (jsonObject.getDouble("version") != version) {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Existe uma nova versÃ£o do DiscordCrasher!");
-            alert.show();
 
-            try {
-                Desktop.getDesktop().browse(new URL("https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/" + version + "/AutomaticDiscordCrasher.exe").toURI());
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
+            int i = JOptionPane.showConfirmDialog(null, "Existe uma nova versão do DiscordCrasher!\nVocê deseja instalar a nova versão?");
+
+            if (i == JOptionPane.YES_OPTION) {
+                try {
+                    Desktop.getDesktop().browse(new URL("https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/" + version + "/AutomaticDiscordCrasher.exe").toURI());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }
             }
+
+
             System.exit(0);
         }
 
