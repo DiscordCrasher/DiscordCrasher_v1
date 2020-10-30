@@ -13,14 +13,12 @@
 [![Demo CountPages alpha](https://j.gifs.com/814qgr.gif)](https://youtu.be/Bu8BqSbBFwc)
 
 ## Recomendações
-
 **Não utilize em sua conta principal, este software é contra os Termos de Uso do Discord.**
 
 ## Termos de Uso
 **Veja os nossos [Termos de Uso](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/master/terms.md) antes de utilizar o Software!**
 
-### Dependências
-
+## Dependências
 - [JSON-Java](https://github.com/douglascrockford/JSON-java)
 - [OkHttp3](https://square.github.io/okhttp/)
 
