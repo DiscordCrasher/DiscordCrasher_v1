@@ -1,4 +1,4 @@
-# DiscordCrasher
+# Discord Crasher
 
 ###### Sistema automatizado de trava
 
