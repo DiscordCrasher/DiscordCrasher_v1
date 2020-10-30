@@ -13,11 +13,12 @@ import java.io.IOException;
 public class AppManager {
 
     private Stage frameStage;
+    private Stage changelogStage;
 
-    public AppManager() {
+    public AppManager(double version) {
         Platform.runLater(() -> {
             frameStage = new Stage();
-            frameStage.setTitle("DiscordCrasher");
+            frameStage.setTitle("DiscordCrasher - V" + version);
             frameStage.setResizable(false);
             frameStage.getIcons().add(new javafx.scene.image.Image("icon.png"));
             frameStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
@@ -25,6 +26,19 @@ public class AppManager {
                 public void handle(WindowEvent event) {
                     Platform.exit();
                     System.exit(0);
+                }
+            });
+        });
+
+        Platform.runLater(() -> {
+            changelogStage = new Stage();
+            changelogStage.setTitle("ChangeLog");
+            changelogStage.setResizable(false);
+            changelogStage.getIcons().add(new javafx.scene.image.Image("icon.png"));
+            changelogStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+                    changelogStage.close();
                 }
             });
         });
@@ -53,6 +67,19 @@ public class AppManager {
             }
             frameStage.setScene(new Scene(root));
             frameStage.show();
+        });
+    }
+
+    public void showChangelog() {
+        Platform.runLater(() -> {
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(getClass().getResource("/Changelog.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            changelogStage.setScene(new Scene(root));
+            changelogStage.show();
         });
     }
 }

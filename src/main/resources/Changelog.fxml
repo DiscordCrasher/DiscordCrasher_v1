@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="243.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.ChangelogController">
+   <children>
+      <TextArea editable="false" prefHeight="300.0" prefWidth="471.0" text="DiscordCrasher V1.1:&#10;&#10;- Adicionado changelog&#10;- Adicionado sistema de update&#10;- Adicionado sistema de embed (Bypass para alguns bots anti-spam)&#10;- Adicionado sistema de delay (Bypass para alguns bots anti-flood)&#10;- Melhoria no sistema de erros&#10;- Adicionado número da versão no título do software&#10;&#10;DiscordCrasher V1.0: &#10;&#10;- Primeira versão do software" />
+   </children>
+</AnchorPane>
