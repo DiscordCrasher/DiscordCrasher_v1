@@ -1,6 +1,7 @@
 package me.dc.automaticdiscordcrasher;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import okhttp3.OkHttpClient;
@@ -48,7 +49,7 @@ public class App extends Application {
                 }
             }
 
-
+            Platform.exit();
             System.exit(0);
         }
 
