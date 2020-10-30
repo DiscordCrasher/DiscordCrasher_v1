@@ -40,7 +40,7 @@ public class App extends Application {
 
             if (i == JOptionPane.YES_OPTION) {
                 try {
-                    Desktop.getDesktop().browse(new URL("https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/" + version + "/AutomaticDiscordCrasher.exe").toURI());
+                    Desktop.getDesktop().browse(new URL("https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/" + jsonObject.getDouble("version") + "/AutomaticDiscordCrasher.exe").toURI());
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (URISyntaxException e) {
