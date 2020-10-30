@@ -5,7 +5,7 @@
 **O DiscordCrasher é um software que automatiza o envio de caracteres no qual o Discord possui dificuldades para carregar, gerando uma sobrecarga em que acaba provocando o travamento completo do Discord (Windows, MacOS e Navegador.)**
 
 ## Download
-[AutomaticDiscordCrasher.exe](https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/1.0/AutomaticDiscordCrasher.exe)
+[AutomaticDiscordCrasher.exe](https://github.com/DiscordCrasher/DiscordCrasher_v1/releases/download/1.1/AutomaticDiscordCrasher.exe)
 
 ## Tutorial
 ###### Clique no GIF para assistir em melhor qualidade
