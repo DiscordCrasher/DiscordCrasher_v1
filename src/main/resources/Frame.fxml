@@ -3,25 +3,46 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.FrameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.FrameController">
    <children>
-      <Label layoutX="11.0" layoutY="16.0" text="E-mail:" />
-      <TextField fx:id="emailTextField" layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="221.0" promptText="Email do Discord" />
-      <Label layoutX="11.0" layoutY="45.0" text="Senha:" />
-      <PasswordField fx:id="passwordTextField" layoutX="53.0" layoutY="41.0" prefHeight="25.0" prefWidth="221.0" promptText="Senha do Discord" />
-      <TextField fx:id="idTextField" layoutX="33.0" layoutY="83.0" prefHeight="25.0" prefWidth="240.0" promptText="ID do canal" />
-      <Label layoutX="11.0" layoutY="87.0" text="ID:" />
-      <Button fx:id="startButton" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#onActionStartButton" prefHeight="25.0" prefWidth="85.0" text="Começar" />
-      <Button fx:id="cancelButton" disable="true" layoutX="188.0" layoutY="198.0" mnemonicParsing="false" onAction="#onActionCancelButton" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
-      <Label fx:id="messageCountLabel" layoutX="6.0" layoutY="260.0" prefHeight="17.0" prefWidth="276.0" />
-      <Label fx:id="errorLabel" ellipsisString="" layoutX="6.0" layoutY="277.0" prefHeight="17.0" prefWidth="276.0" />
-      <CheckBox fx:id="embededCheckBox" layoutX="13.0" layoutY="162.0" mnemonicParsing="false" text="Embeded" />
-      <Label layoutX="11.0" layoutY="119.0" text="Delay in ms:" />
-      <Spinner fx:id="delaySpinner" editable="true" layoutX="84.0" layoutY="116.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextField fx:id="idTextField" layoutX="78.0" layoutY="62.0" prefHeight="25.0" prefWidth="254.0" promptText="ID do canal" />
+      <Label layoutX="11.0" layoutY="66.0" text="ID do canal:" />
+      <Button fx:id="startButton" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#onActionStartButton" prefHeight="25.0" prefWidth="85.0" text="Começar" />
+      <Button fx:id="cancelButton" disable="true" layoutX="241.0" layoutY="219.0" mnemonicParsing="false" onAction="#onActionCancelButton" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
+      <Label fx:id="messageCountLabel" layoutX="6.0" layoutY="260.0" prefHeight="17.0" prefWidth="326.0" />
+      <Label fx:id="errorLabel" ellipsisString="" layoutX="6.0" layoutY="277.0" prefHeight="17.0" prefWidth="326.0" />
+      <CheckBox fx:id="embededCheckBox" layoutX="13.0" layoutY="141.0" mnemonicParsing="false" text="Embeded">
+         <tooltip>
+            <Tooltip autoHide="true" text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
+         </tooltip></CheckBox>
+      <Label layoutX="11.0" layoutY="98.0" text="Delay in ms:" />
+      <Spinner fx:id="delaySpinner" editable="true" layoutX="84.0" layoutY="95.0" prefHeight="25.0" prefWidth="94.0" />
+      <Label fx:id="emailLabel" layoutX="12.0" layoutY="14.0" prefHeight="17.0" prefWidth="326.0" text="E-mail:" />
+      <Label fx:id="tokenLabel" layoutX="12.0" layoutY="31.0" prefHeight="17.0" prefWidth="326.0" text="Token:" />
+      <Label layoutX="93.0" layoutY="136.0" text="?">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
+         </tooltip>
+      </Label>
+      <Label layoutX="15.0" layoutY="179.0" text="Anonymous Mode:">
+         <tooltip>
+            <Tooltip autoHide="true" text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
+         </tooltip>
+      </Label>
+      <Button fx:id="anonymousButton" layoutX="121.0" layoutY="175.0" mnemonicParsing="false" onAction="#onActionAnonymousButton" text="Ativar">
+         <tooltip>
+            <Tooltip autoHide="true" text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
+         </tooltip>
+      </Button>
+      <Button fx:id="desfazerTravaButton" disable="true" layoutX="123.0" layoutY="219.0" mnemonicParsing="false" onAction="#onDesfazerTravaButton" prefHeight="25.0" prefWidth="94.0" text="Desfazer Trava" />
    </children>
 </AnchorPane>

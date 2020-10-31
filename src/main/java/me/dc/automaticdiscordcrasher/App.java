@@ -2,11 +2,9 @@ package me.dc.automaticdiscordcrasher;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.json.JSONObject;
 
@@ -19,7 +17,7 @@ import java.net.URL;
 public class App extends Application {
 
 
-    private double version = 1.2;
+    private double version = 1.3;
     public static AppManager appManager;
 
     @Override
@@ -55,8 +53,8 @@ public class App extends Application {
 
 
         appManager = new AppManager(version);
-        appManager.showFrame();
-        appManager.showChangelog();
+        appManager.showLogin();
+
 
 
 
