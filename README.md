@@ -13,16 +13,12 @@
 [![Demo CountPages alpha](https://j.gifs.com/814qgr.gif)](https://youtu.be/Bu8BqSbBFwc)
 
 ## ChangeLog
-**DiscordCrasher V1.1**
-- Adicionado changelog;
-- Adicionado sistema de update;
-- Adicionado sistema de embed (Bypass para alguns bots anti-spam);
-- Adicionado sistema de delay (Bypass para alguns bots anti-flood);
-- Melhoria no sistema de erros;
-- Adicionado número da versão no título do software.
-
-**DiscordCrasher V1.0**
-- Primeira versão do software
+**DiscordCrasher V1.2**
+- Servidor de suporte criado (discord.gg/UnUUwbaYfx);
+- Adicionado sistema de (Bypass Anti-Spam/Anti-Flood Passivo) para os melhores bots do 
+discord;
+- Removido os créditos do criador da Payload antiga (Agora o software cria a própria payload 
+de forma aleatória).
 
 ## Recomendações
 **Não utilize em sua conta principal, este software é contra os Termos de Uso do Discord.**
