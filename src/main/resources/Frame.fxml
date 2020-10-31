@@ -7,9 +7,8 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.FrameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.FrameController">
    <children>
       <Label layoutX="11.0" layoutY="16.0" text="E-mail:" />
       <TextField fx:id="emailTextField" layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="221.0" promptText="Email do Discord" />
@@ -17,15 +16,10 @@
       <PasswordField fx:id="passwordTextField" layoutX="53.0" layoutY="41.0" prefHeight="25.0" prefWidth="221.0" promptText="Senha do Discord" />
       <TextField fx:id="idTextField" layoutX="33.0" layoutY="83.0" prefHeight="25.0" prefWidth="240.0" promptText="ID do canal" />
       <Label layoutX="11.0" layoutY="87.0" text="ID:" />
-      <Button fx:id="startButton" layoutX="14.0" layoutY="228.0" mnemonicParsing="false" onAction="#onActionStartButton" prefHeight="25.0" prefWidth="85.0" text="Começar" />
-      <Button fx:id="cancelButton" disable="true" layoutX="188.0" layoutY="228.0" mnemonicParsing="false" onAction="#onActionCancelButton" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
-      <Label layoutX="51.0" layoutY="204.0" prefHeight="17.0" prefWidth="188.0" text="Créditos: Felipe: (Payload) Mateus: (Programa)">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Label>
-      <Label fx:id="messageCountLabel" layoutX="6.0" layoutY="279.0" prefHeight="17.0" prefWidth="276.0" />
-      <Label fx:id="errorLabel" ellipsisString="" layoutX="6.0" layoutY="296.0" prefHeight="17.0" prefWidth="276.0" />
+      <Button fx:id="startButton" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#onActionStartButton" prefHeight="25.0" prefWidth="85.0" text="Começar" />
+      <Button fx:id="cancelButton" disable="true" layoutX="188.0" layoutY="198.0" mnemonicParsing="false" onAction="#onActionCancelButton" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
+      <Label fx:id="messageCountLabel" layoutX="6.0" layoutY="260.0" prefHeight="17.0" prefWidth="276.0" />
+      <Label fx:id="errorLabel" ellipsisString="" layoutX="6.0" layoutY="277.0" prefHeight="17.0" prefWidth="276.0" />
       <CheckBox fx:id="embededCheckBox" layoutX="13.0" layoutY="162.0" mnemonicParsing="false" text="Embeded" />
       <Label layoutX="11.0" layoutY="119.0" text="Delay in ms:" />
       <Spinner fx:id="delaySpinner" editable="true" layoutX="84.0" layoutY="116.0" prefHeight="25.0" prefWidth="94.0" />

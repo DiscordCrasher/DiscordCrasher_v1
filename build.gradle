@@ -1,11 +1,11 @@
 plugins {
-    id 'java'
-    id 'edu.sc.seis.launch4j' version '2.4.3'
+    id "java"
+    id "edu.sc.seis.launch4j" version "2.4.3"
     id "com.github.johnrengelman.shadow" version "5.2.0"
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group "org.example"
+version "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1252">
     <file url="file://$PROJECT_DIR$/src/main/java/me/dc/automaticdiscordcrasher/App.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/me/dc/automaticdiscordcrasher/framecontroller/FrameController.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/me/dc/automaticdiscordcrasher/utils/Flooder.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/Test.java" charset="windows-1252" />
+    <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>

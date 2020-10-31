@@ -19,7 +19,7 @@ import java.net.URL;
 public class App extends Application {
 
 
-    private double version = 1.1;
+    private double version = 1.2;
     public static AppManager appManager;
 
     @Override
