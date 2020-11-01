@@ -14,6 +14,7 @@ import org.json.JSONObject;
 import javax.xml.bind.DatatypeConverter;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.text.DecimalFormat;
@@ -143,7 +144,11 @@ public class FrameController implements Initializable {
             String response = null;
 
             try {
-                jsonObject.put("avatar", getImageData(new File(getClass().getResource("/anonymous.png").getPath())));
+                try {
+                    jsonObject.put("avatar", getClass().getResource("/anonymous.png").toURI().toString());
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }
                 response = changeUserInfos(App.appManager.getToken(), jsonObject.toString());
             } catch (IOException e) {
                 e.printStackTrace();
@@ -302,21 +307,5 @@ public class FrameController implements Initializable {
         return response;
     }
 
-    private String getImageData(File file) throws IOException {
-
-        String contentType = Files.probeContentType(file.toPath());
-
-        byte[] data = Files.readAllBytes(file.toPath());
-
-        String base64str = DatatypeConverter.printBase64Binary(data);
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("data:");
-        sb.append(contentType);
-        sb.append(";base64,");
-        sb.append(base64str);
-
-        return sb.toString();
-    }
 
 }

@@ -42,7 +42,7 @@ public class LoginController {
         String token = new Requester().getToken(emailTextField.getText(), passwordTextField.getText());
 
         if (token == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "E-mail ou senha incorreto(a). (Lembre-se o 2FA deve estar desativado)\n(Lembre-se de logar no navedador)");
+            Alert alert = new Alert(Alert.AlertType.ERROR, "E-mail ou senha incorreto(a). (Lembre-se o 2FA deve estar desativado)\n(Lembre-se de logar no navegador)");
             alert.show();
             loginButton.setDisable(false);
             return;
