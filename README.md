@@ -13,11 +13,10 @@
 [![Demo CountPages alpha](https://j.gifs.com/814qgr.gif)](https://youtu.be/Bu8BqSbBFwc)
 
 ## ChangeLog
-**DiscordCrasher v1.3**
-- Adicionado sistema que torna o usuário e avatar invisíveis (Anonymous Mode);
-- Adicionado sistema para desfazer o último trava efetuado;
-- Melhoria no sistema de login;
-- Melhoria no código para amenizar o uso de RAM do software.
+**DiscordCrasher v1.4**
+- Adicionado sistema para salvar os dados de login;
+- Adicionado modo de trava específico para celulares Android (Android Mode);
+- Melhorias no código.
 
 ## Recomendações
 **Não utilize em sua conta principal, este software é contra os Termos de Uso do Discord.**
