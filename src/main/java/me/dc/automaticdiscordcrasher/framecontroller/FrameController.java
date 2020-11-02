@@ -1,6 +1,8 @@
 package me.dc.automaticdiscordcrasher.framecontroller;
 
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,13 +12,9 @@ import me.dc.automaticdiscordcrasher.App;
 import me.dc.automaticdiscordcrasher.utils.Flooder;
 import okhttp3.*;
 import org.json.JSONObject;
-
-import javax.xml.bind.DatatypeConverter;
-import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.file.Files;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
@@ -49,6 +47,30 @@ public class FrameController implements Initializable {
 
         delaySpinner.getEditor().setTextFormatter(priceFormatter);
 
+        androidModeCheckBox.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if (embededCheckBox.isSelected()) {
+                    embededCheckBox.setSelected(false);
+                }
+
+                androidModeCheckBox.setSelected(newValue);
+            }
+        });
+
+        embededCheckBox.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if (androidModeCheckBox.isSelected()) {
+                    androidModeCheckBox.setSelected(false);
+                }
+
+                embededCheckBox.setSelected(newValue);
+            }
+        });
+
+
+
         emailLabel.setText("E-mail: " + App.appManager.getEmail());
         tokenLabel.setText("Token: " + App.appManager.getToken());
 
@@ -77,6 +99,9 @@ public class FrameController implements Initializable {
     private CheckBox embededCheckBox;
 
     @FXML
+    private CheckBox androidModeCheckBox;
+
+    @FXML
     private Spinner<Integer> delaySpinner;
 
     @FXML
@@ -84,9 +109,6 @@ public class FrameController implements Initializable {
 
     @FXML
     private Label tokenLabel;
-
-    @FXML
-    private Button anonymousButton;
 
     @FXML
     private Button desfazerTravaButton;
@@ -116,7 +138,7 @@ public class FrameController implements Initializable {
             @Override
             public void run() {
                 try {
-                    new Flooder(errorLabel, messageCountLabel, idTextField, startButton, cancelButton, embededCheckBox, delaySpinner, desfazerTravaButton).attack(token, idTextField.getText());
+                    new Flooder(errorLabel, messageCountLabel, idTextField, startButton, cancelButton, embededCheckBox, delaySpinner, desfazerTravaButton, androidModeCheckBox).attack(token, idTextField.getText());
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="174.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.LoginController">
    <children>
       <Label layoutX="9.0" layoutY="14.0" text="E-mail:" />
-      <TextField fx:id="emailTextField" layoutX="53.0" layoutY="10.0" prefHeight="25.0" prefWidth="217.0" promptText="E-mail do Discord" />
       <PasswordField fx:id="passwordTextField" layoutX="53.0" layoutY="44.0" prefHeight="25.0" prefWidth="217.0" promptText="Senha do Discord" />
       <Label layoutX="9.0" layoutY="48.0" text="Senha:" />
       <Label layoutX="46.0" layoutY="79.0" text="Lembre-se de manter o 2FA desativado">
@@ -25,5 +23,6 @@
             <Font size="10.0" />
          </font>
       </Label>
+      <ComboBox fx:id="emailComboBox" editable="true" layoutX="53.0" layoutY="10.0" prefHeight="25.0" prefWidth="217.0" promptText="E-mail do Discord" />
    </children>
 </AnchorPane>

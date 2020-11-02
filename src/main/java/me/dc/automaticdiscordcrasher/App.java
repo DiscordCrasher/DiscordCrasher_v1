@@ -3,6 +3,7 @@ package me.dc.automaticdiscordcrasher;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.stage.Stage;
+import me.dc.automaticdiscordcrasher.jsonmanager.JsonFileManager;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -19,6 +20,7 @@ public class App extends Application {
 
     private double version = 1.3;
     public static AppManager appManager;
+    public static JsonFileManager jsonFileManager;
 
     @Override
     public void start(Stage primaryStage) {
@@ -51,7 +53,7 @@ public class App extends Application {
             System.exit(0);
         }
 
-
+        jsonFileManager = new JsonFileManager();
         appManager = new AppManager(version);
         appManager.showLogin();
 

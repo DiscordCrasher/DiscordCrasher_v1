@@ -16,6 +16,7 @@ public class AppManager {
     private Stage frameStage;
     private Stage changelogStage;
     private Stage loginStage;
+
     private String token;
     private String email;
     private String password;

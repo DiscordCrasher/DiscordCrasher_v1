@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dc.automaticdiscordcrasher.framecontroller.FrameController">
    <children>
-      <TextField fx:id="idTextField" layoutX="78.0" layoutY="62.0" prefHeight="25.0" prefWidth="254.0" promptText="ID do canal" />
+      <TextField fx:id="idTextField" layoutX="84.0" layoutY="62.0" prefHeight="25.0" prefWidth="248.0" promptText="ID do canal" />
       <Label layoutX="11.0" layoutY="66.0" text="ID do canal:" />
       <Button fx:id="startButton" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#onActionStartButton" prefHeight="25.0" prefWidth="85.0" text="Começar" />
       <Button fx:id="cancelButton" disable="true" layoutX="241.0" layoutY="219.0" mnemonicParsing="false" onAction="#onActionCancelButton" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
@@ -19,7 +19,7 @@
       <Label fx:id="errorLabel" ellipsisString="" layoutX="6.0" layoutY="277.0" prefHeight="17.0" prefWidth="326.0" />
       <CheckBox fx:id="embededCheckBox" layoutX="13.0" layoutY="141.0" mnemonicParsing="false" text="Embeded">
          <tooltip>
-            <Tooltip autoHide="true" text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
+            <Tooltip text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
          </tooltip></CheckBox>
       <Label layoutX="11.0" layoutY="98.0" text="Delay in ms:" />
       <Spinner fx:id="delaySpinner" editable="true" layoutX="84.0" layoutY="95.0" prefHeight="25.0" prefWidth="94.0" />
@@ -30,19 +30,32 @@
             <Font size="16.0" />
          </font>
          <tooltip>
-            <Tooltip autoHide="true" text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
+            <Tooltip text="Irá colocar o payload dentro de um embed (Alguns bots Anti-Spam não detectam embeds)" wrapText="true" />
          </tooltip>
       </Label>
       <Label layoutX="15.0" layoutY="179.0" text="Anonymous Mode:">
          <tooltip>
-            <Tooltip autoHide="true" text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
+            <Tooltip text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
          </tooltip>
       </Label>
       <Button fx:id="anonymousButton" layoutX="121.0" layoutY="175.0" mnemonicParsing="false" onAction="#onActionAnonymousButton" text="Ativar">
          <tooltip>
-            <Tooltip autoHide="true" text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
+            <Tooltip text="Irá tornar o nome de usuário e avatar invisíveis (Caso o nome de usuário já não esteja invisível)" wrapText="true" />
          </tooltip>
       </Button>
       <Button fx:id="desfazerTravaButton" disable="true" layoutX="123.0" layoutY="219.0" mnemonicParsing="false" onAction="#onDesfazerTravaButton" prefHeight="25.0" prefWidth="94.0" text="Desfazer Trava" />
+      <CheckBox fx:id="androidModeCheckBox" layoutX="212.0" layoutY="142.0" mnemonicParsing="false" text="Android Mode">
+         <tooltip>
+            <Tooltip text="Ao ativar essa opção, ele irá alterar o tipo de trava enviado para um especifico que trava alguns celulares Android. (não funciona com iOS)" wrapText="true" />
+         </tooltip>
+      </CheckBox>
+      <Label layoutX="321.0" layoutY="138.0" text="?">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ao ativar essa opção, ele irá alterar o tipo de trava enviado para um especifico que trava alguns celulares Android. (não funciona com iOS)" wrapText="true" />
+         </tooltip>
+      </Label>
    </children>
 </AnchorPane>
