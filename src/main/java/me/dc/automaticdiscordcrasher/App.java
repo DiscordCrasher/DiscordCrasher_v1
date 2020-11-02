@@ -18,7 +18,7 @@ import java.net.URL;
 public class App extends Application {
 
 
-    private double version = 1.3;
+    private double version = 1.4;
     public static AppManager appManager;
     public static JsonFileManager jsonFileManager;
 
