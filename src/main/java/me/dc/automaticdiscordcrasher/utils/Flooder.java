@@ -82,7 +82,7 @@ public class Flooder {
 
         JSONObject jsonObject = new JSONObject();
 
-        jsonObject.put("content", "\nhttps://media.giphy.com/media/QSY7rs0DraougPGGPV/giphy.gif");
+        jsonObject.put("content", "\nhttps://cdn.discordapp.com/attachments/772892079000125444/772892134637830154/gif.gif");
 
 
 
