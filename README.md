@@ -1,5 +1,7 @@
 # Discord Crasher
 
+**Este programa foi criado no intuito de testes de segurança e instabilidade, não o use com outros objetivos.**
+
 ###### Sistema automatizado de trava
 
 **O DiscordCrasher é um software que automatiza o envio de caracteres no qual o Discord possui dificuldades para carregar, gerando uma sobrecarga em que acaba provocando o travamento completo do Discord (Windows, MacOS e Navegador.)**
@@ -18,8 +20,8 @@
 - Adicionado modo de trava específico para celulares Android (Android Mode);
 - Melhorias no código.
 
-## Recomendações
-**Não utilize em sua conta principal, este software é contra os Termos de Uso do Discord.**
+## Atenção
+**Não utilize este software para fins diversos, este software é contra os Termos de Uso do Discord.**
 
 ## Termos de Uso
 **Veja os nossos [Termos de Uso](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/master/terms.md) antes de utilizar o Software!**
