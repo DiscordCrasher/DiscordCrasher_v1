@@ -21,6 +21,7 @@
 - Melhorias no código.
 
 ## Atenção
+**A falha no qual este software explora já foi corrigida pelo Discord.**
 **Não utilize este software para fins diversos, este software é contra os Termos de Uso do Discord.**
 
 ## Termos de Uso
