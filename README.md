@@ -20,9 +20,8 @@
 - Adicionado modo de trava específico para celulares Android (Android Mode);
 - Melhorias no código.
 
-## Atenção
-**A falha no qual este software explora já foi corrigida pelo Discord.**
-**Não utilize este software para fins diversos, este software é contra os Termos de Uso do Discord.**
+## Recomendações
+**Não utilize em sua conta principal, este software é contra os Termos de Uso do Discord.**
 
 ## Termos de Uso
 **Veja os nossos [Termos de Uso](https://github.com/DiscordCrasher/DiscordCrasher_v1/blob/master/terms.md) antes de utilizar o Software!**
