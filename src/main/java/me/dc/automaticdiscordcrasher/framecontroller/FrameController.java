@@ -118,7 +118,7 @@ public class FrameController implements Initializable {
     void onActionStartButton(ActionEvent event) {
 
         if (idTextField.getText() == null || idTextField.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "O campo de id n�o foi preenchido.");
+            Alert alert = new Alert(Alert.AlertType.ERROR, "O campo de id não foi preenchido.");
             alert.show();
             return;
         }
@@ -158,10 +158,10 @@ public class FrameController implements Initializable {
             e.printStackTrace();
         }
 
-        if (!userInfos.getString("username").equalsIgnoreCase("\u1CBC\u1CBC")) {
+        if (!userInfos.getString("username").equalsIgnoreCase("҉҉҉҉҉҉")) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("password", App.appManager.getPassword());
-            jsonObject.put("username", "\u1CBC\u1CBC");
+            jsonObject.put("username", "҉҉҉҉҉҉");
 
             String response = null;
 
@@ -190,11 +190,11 @@ public class FrameController implements Initializable {
                     alert.show();
                 }
             } else {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "O usu�rio entrou em modo anonymous.");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "O usuário entrou em modo anonymous.");
                 alert.show();
             }
         } else {
-            Alert alert = new Alert(Alert.AlertType.WARNING, "O usu�rio j� est� no modo anonymous");
+            Alert alert = new Alert(Alert.AlertType.WARNING, "O usuário já está no modo anonymous");
             alert.show();
         }
     }
@@ -277,7 +277,7 @@ public class FrameController implements Initializable {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "O �ltimo trava foi desfeito.");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "O último trava foi desfeito.");
                 alert.show();
                 errorLabel.setText("");
                 messageCountLabel.setText("");
