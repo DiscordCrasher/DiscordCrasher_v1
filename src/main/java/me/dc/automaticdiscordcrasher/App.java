@@ -18,7 +18,7 @@ import java.net.URL;
 public class App extends Application {
 
 
-    private double version = 1.4;
+    private double version = 1.5;
     public static AppManager appManager;
     public static JsonFileManager jsonFileManager;
 
@@ -37,7 +37,7 @@ public class App extends Application {
 
         if (jsonObject.getDouble("version") != version) {
 
-            int i = JOptionPane.showConfirmDialog(null, "Existe uma nova versão do DiscordCrasher!\nVocê deseja instalar a nova versão?");
+            int i = JOptionPane.showConfirmDialog(null, "Existe uma nova versÃ£o do DiscordCrasher!\nVocÃª deseja instalar a nova versÃ£o?");
 
             if (i == JOptionPane.YES_OPTION) {
                 try {
